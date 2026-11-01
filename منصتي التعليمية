@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>منصتي التعليمية - تعلم البرمجة والعلوم</title>
     <style>
-        /* تنسيقات CSS العامة والموقع */
         :root {
             --primary-color: #2c3e50;
             --secondary-color: #3498db;
             --text-color: #333;
             --bg-color: #f4f6f7;
             --white: #ffffff;
+            --card-bg: #ffffff;
+            --shadow: rgba(0, 0, 0, 0.08);
+            --muted: #666;
         }
 
         * {
@@ -27,7 +29,6 @@
             line-height: 1.6;
         }
 
-        /* الهيدر وشريط التنقل */
         header {
             background-color: var(--primary-color);
             color: var(--white);
@@ -35,7 +36,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         .logo h1 {
@@ -45,10 +46,7 @@
         nav ul {
             display: flex;
             list-style: none;
-        }
-
-        nav ul li {
-            margin-right: 1.5rem;
+            gap: 1.5rem;
         }
 
         nav ul li a {
@@ -62,9 +60,8 @@
             color: var(--secondary-color);
         }
 
-        /* القسم الرئيسي والترحيب */
         .hero {
-            background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.8)), url('https://unsplash.com') no-repeat center center/cover;
+            background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.8)), url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
             color: var(--white);
             text-align: center;
             padding: 4rem 2rem;
@@ -89,7 +86,6 @@
             outline: none;
         }
 
-        /* قسم الكورسات والدروس */
         .main-container {
             max-width: 1200px;
             margin: 2rem auto;
@@ -100,6 +96,7 @@
             text-align: center;
             margin-bottom: 2rem;
             position: relative;
+            font-size: 2rem;
         }
 
         .section-title::after {
@@ -115,11 +112,73 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
-        </style>
+        }
+
+        .course-card {
+            background: var(--card-bg);
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 16px 28px rgba(0, 0, 0, 0.12);
+        }
+
+        .course-badge {
+            background: var(--secondary-color);
+            color: var(--white);
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            margin: 1rem 1rem 0;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+
+        .course-content {
+            padding: 1.2rem 1.2rem 1.5rem;
+        }
+
+        .course-content h4 {
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
+            color: var(--primary-color);
+        }
+
+        .course-content p {
+            color: var(--muted);
+            margin-bottom: 1rem;
+        }
+
+        .btn-start {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-decoration: none;
+            padding: 0.8rem 1.2rem;
+            border-radius: 12px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-start:hover {
+            background-color: var(--secondary-color);
+        }
+
+        footer {
+            background: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 1.5rem 1rem;
+            margin-top: 2rem;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- شريط التنقل العلوي -->
     <header>
         <div class="logo">
             <h1>🎓 منصتي التعليمية</h1>
@@ -134,7 +193,6 @@
         </nav>
     </header>
 
-    <!-- قسم الترحيب والبحث -->
     <section class="hero">
         <h2>ابتدئ رحلة التعلم الذاتي اليوم</h2>
         <p>تصفح عشرات الدروس التعليمية المجانية في شتى المجالات</p>
@@ -143,12 +201,10 @@
         </div>
     </section>
 
-    <!-- محتوى الكورسات المتاحة -->
     <main class="main-container">
         <h3 class="section-title">الكورسات المتاحة للتعلم</h3>
-        
+
         <div class="courses-grid" id="coursesGrid">
-            <!-- الكورس الأول -->
             <div class="course-card" data-title="أساسيات لغة بايثون للمبتدئين">
                 <div class="course-badge">برمجة</div>
                 <div class="course-content">
@@ -158,7 +214,6 @@
                 </div>
             </div>
 
-            <!-- الكورس الثاني -->
             <div class="course-card" data-title="تصميم واجهات المستخدم باستخدام html و css">
                 <div class="course-badge">تصميم ويب</div>
                 <div class="course-content">
@@ -168,7 +223,6 @@
                 </div>
             </div>
 
-            <!-- الكورس الثالث -->
             <div class="course-card" data-title="مبادئ الذكاء الاصطناعي وتعلم الآلة">
                 <div class="course-badge">ذكاء اصطناعي</div>
                 <div class="course-content">
@@ -180,12 +234,10 @@
         </div>
     </main>
 
-    <!-- الفوتر (أسفل الصفحة) -->
     <footer>
         <p>جميع الحقوق محفوظة &copy; 2026 - منصتي التعليمية</p>
     </footer>
 
-    <!-- سكريبت الفلترة والبحث التفاعلي -->
     <script>
         const searchInput = document.getElementById('searchInput');
         const courseCards = document.querySelectorAll('.course-card');
