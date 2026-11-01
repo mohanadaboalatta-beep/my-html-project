@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصتي التعليمية - تعلم البرمجة والعلوم</title>
+    <style>
+        /* تنسيقات CSS العامة والموقع */
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --text-color: #333;
+            --bg-color: #f4f6f7;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* الهيدر وشريط التنقل */
+        header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .logo h1 {
+            font-size: 1.5rem;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-right: 1.5rem;
+        }
+
+        nav ul li a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: var(--secondary-color);
+        }
+
+        /* القسم الرئيسي والترحيب */
+        .hero {
+            background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.8)), url('https://unsplash.com') no-repeat center center/cover;
+            color: var(--white);
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .search-box {
+            margin-top: 1.5rem;
+        }
+
+        .search-box input {
+            padding: 0.7rem 1.5rem;
+            width: 300px;
+            max-width: 100%;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        /* قسم الكورسات والدروس */
+        .main-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: var(--secondary-color);
+            margin: 0.5rem auto 0;
+        }
+
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        </style>
+</head>
+<body>
+
+    <!-- شريط التنقل العلوي -->
+    <header>
+        <div class="logo">
+            <h1>🎓 منصتي التعليمية</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">الرئيسية</a></li>
+                <li><a href="#">المسارات الدراسية</a></li>
+                <li><a href="#">من نحن</a></li>
+                <li><a href="#">اتصل بنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- قسم الترحيب والبحث -->
+    <section class="hero">
+        <h2>ابتدئ رحلة التعلم الذاتي اليوم</h2>
+        <p>تصفح عشرات الدروس التعليمية المجانية في شتى المجالات</p>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="ابحث عن كورس أو مادة معينة...">
+        </div>
+    </section>
+
+    <!-- محتوى الكورسات المتاحة -->
+    <main class="main-container">
+        <h3 class="section-title">الكورسات المتاحة للتعلم</h3>
+        
+        <div class="courses-grid" id="coursesGrid">
+            <!-- الكورس الأول -->
+            <div class="course-card" data-title="أساسيات لغة بايثون للمبتدئين">
+                <div class="course-badge">برمجة</div>
+                <div class="course-content">
+                    <h4>أساسيات لغة بايثون للمبتدئين</h4>
+                    <p>تعلم برمجية بايثون من الصفر تماماً، من المتغيرات إلى الدوال وبناء التطبيقات الأساسية.</p>
+                    <a href="#" class="btn-start" onclick="alert('شكرًا لاهتمامك! سيتم نقلك إلى صفحة الكورس قريباً.')">ابدأ التعلم الآن</a>
+                </div>
+            </div>
+
+            <!-- الكورس الثاني -->
+            <div class="course-card" data-title="تصميم واجهات المستخدم باستخدام html و css">
+                <div class="course-badge">تصميم ويب</div>
+                <div class="course-content">
+                    <h4>تصميم واجهات الويب (HTML & CSS)</h4>
+                    <p>احترف تصميم وتنسيق صفحات المواقع الإلكترونية لتكون متجاوبة مع كافة الشاشات.</p>
+                    <a href="#" class="btn-start" onclick="alert('شكرًا لاهتمامك! سيتم نقلك إلى صفحة الكورس قريباً.')">ابدأ التعلم الآن</a>
+                </div>
+            </div>
+
+            <!-- الكورس الثالث -->
+            <div class="course-card" data-title="مبادئ الذكاء الاصطناعي وتعلم الآلة">
+                <div class="course-badge">ذكاء اصطناعي</div>
+                <div class="course-content">
+                    <h4>مبادئ الذكاء الاصطناعي</h4>
+                    <p>مقدمة مبسطة ومفاهيم أساسية حول تقنيات الذكاء الاصطناعي وتطبيقاته اليومية.</p>
+                    <a href="#" class="btn-start" onclick="alert('شكرًا لاهتمامك! سيتم نقلك إلى صفحة الكورس قريباً.')">ابدأ التعلم الآن</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- الفوتر (أسفل الصفحة) -->
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2026 - منصتي التعليمية</p>
+    </footer>
+
+    <!-- سكريبت الفلترة والبحث التفاعلي -->
+    <script>
+        const searchInput = document.getElementById('searchInput');
+        const courseCards = document.querySelectorAll('.course-card');
+
+        searchInput.addEventListener('input', function(e) {
+            const query = e.target.value.toLowerCase().trim();
+
+            courseCards.forEach(card => {
+                const title = card.getAttribute('data-title').toLowerCase();
+                if (title.includes(query)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
