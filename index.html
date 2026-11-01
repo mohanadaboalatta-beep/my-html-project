@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>„‰’… «· ﬂ‰Ê·ÊÃÌ« ··»ﬂ«·Ê—Ì«</title>
+    <style>
+        :root {
+            --primary-color: #0f172a;
+            --accent-color: #2563eb;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-color: #1e293b;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* «·ÂÌœ— */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        header p {
+            margin: 5px 0 0 0;
+            opacity: 0.8;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ‰„Ê–Ã ≈÷«›… «·œ—Ê” */
+        .form-section {
+            background-color: var(--card-bg);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            height: fit-content;
+        }
+
+        .form-section h2 {
+            margin-top: 0;
+            font-size: 20px;
+            color: var(--accent-color);
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        .form-group input:focus, .form-group select:focus {
+            outline: none;
+            border-color: var(--accent-color);
+        }
+
+        button.btn-add {
+            width: 100%;
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button.btn-add:hover {
+            background-color: #1d4ed8;
+        }
+
+        /* ﬁ”„ ⁄—÷ «·œ—Ê” */
+        .lessons-section h2 {
+            font-size: 22px;
+            margin-top: 0;
+        }
+
+        .lessons-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .lesson-card {
+            background-color: var(--card-bg);
+            border-right: 5px solid var(--accent-color);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .lesson-info h3 {
+            margin: 0 0 8px 0;
+            font-size: 18px;
+        }
+
+        .lesson-tag {
+            background-color: #e0f2fe;
+            color: #0369a1;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .lesson-actions a {
+            background-color: #10b981;
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: background 0.3s;
+        }
+
+        .lesson-actions a:hover {
+            background-color: #059669;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>„‰’… «· ﬂ‰Ê·ÊÃÌ« Ê«·»—„Ã… - „—Õ·… «·»ﬂ«·Ê—Ì«</h1>
+        <p>„”«Õ ﬂ «· ⁄·Ì„Ì… ·≈œ«—… Ê„ «»⁄… «·œ—Ê” Ê«·„Õ«÷—« </p>
+    </header>
+
+    <div class="container">
+        <!-- ·ÊÕ… ≈÷«›… œ—” ÃœÌœ -->
+        <div class="form-section">
+            <h2>≈÷«›… œ—” ÃœÌœ</h2>
+            <div class="form-group">
+                <label for="lessonTitle">⁄‰Ê«‰ «·œ—”:</label>
+                <input type="text" id="lessonTitle" placeholder="„À«·: ŒÊ«—“„Ì«  «·–ﬂ«¡ «·«’ÿ‰«⁄Ì">
+            </div>
+            <div class="form-group">
+                <label for="lessonTrack">«·ﬁ”„ / «·„ÕÊ—:</label>
+                <select id="lessonTrack">
+                    <option value="«·»—„Ã… ÊﬁÊ«⁄œ «·»Ì«‰« ">«·»—„Ã… ÊﬁÊ«⁄œ «·»Ì«‰« </option>
+                    <option value="«·‘»ﬂ«  Ê«·√„‰ «·”Ì»—«‰Ì">«·‘»ﬂ«  Ê«·√„‰ «·”Ì»—«‰Ì</option>
+                    <option value="«·–ﬂ«¡ «·«’ÿ‰«⁄Ì Ê«· ÿÊ— «· ﬂ‰Ê·ÊÃÌ">«·–ﬂ«¡ «·«’ÿ‰«⁄Ì Ê«· ÿÊ— «· ﬂ‰Ê·ÊÃÌ</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="lessonUrl">—«»ÿ «·‘—Õ √Ê „·› «·‹ PDF:</label>
+                <input type="url" id="lessonUrl" placeholder="https://example.com">
+            </div>
+            <button class="btn-add" onclick="addNewLesson()">≈÷«›… «·œ—” «·¬‰</button>
+        </div>
+
+        <!-- ﬁ«∆„… ⁄—÷ «·œ—Ê” -->
+        <div class="lessons-section">
+            <h2>«·œ—Ê” «·Õ«·Ì… ›Ì «·„‰ÂÃ</h2>
+            <div class="lessons-grid" id="lessonsContainer">
+                
+                <!-- œ—” «› —«÷Ì 1 -->
+                <div class="lesson-card">
+                    <div class="lesson-info">
+                        <h3> ÿÊ—  ﬂ‰Ê·ÊÃÌ« «·„⁄·Ê„«  Ê«·« ’«·« </h3>
+                        <span class="lesson-tag">«·–ﬂ«¡ «·«’ÿ‰«⁄Ì Ê«· ÿÊ— «· ﬂ‰Ê·ÊÃÌ</span>
+                    </div>
+                    <div class="lesson-actions">
+                        <a href="#" target="_blank">⁄—÷ «·œ—”</a>
+                    </div>
+                </div>
+
+                <!-- œ—” «› —«÷Ì 2 -->
+                <div class="lesson-card">
+                    <div class="lesson-info">
+                        <h3>√”«”Ì«  «·»—„Ã… »·€… »«ÌÀÊ‰</h3>
+                        <span class="lesson-tag">«·»—„Ã… ÊﬁÊ«⁄œ «·»Ì«‰« </span>
+                    </div>
+                    <div class="lesson-actions">
+                        <a href="#" target="_blank">⁄—÷ «·œ—”</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function addNewLesson() {
+            // Ã·» «·ﬁÌ„ „‰ «·„œŒ·« 
+            const title = document.getElementById('lessonTitle').value.trim();
+            const track = document.getElementById('lessonTrack').value;
+            const url = document.getElementById('lessonUrl').value.trim();
+
+            // «· Õﬁﬁ „‰  ⁄»∆… «·»Ì«‰«  «·√”«”Ì…
+            if (title === "" || url === "") {
+                alert("Ì—ÃÏ ≈œŒ«· ⁄‰Ê«‰ «·œ—” Ê—«»ÿ «·‘—Õ √Ê·«!");
+                return;
+            }
+
+            // ≈‰‘«¡ ÂÌﬂ· ﬂ«—  «·œ—” «·ÃœÌœ
+            const lessonContainer = document.getElementById('lessonsContainer');
+            
+            const card = document.createElement('div');
+            card.className = 'lesson-card';
+
+            card.innerHTML = `
+                <div class="lesson-info">
+                    <h3>${title}</h3>
+                    <span class="lesson-tag">${track}</span>
+                </div>
+                <div class="lesson-actions">
+                    <a href="${url}" target="_blank">⁄—÷ «·œ—”</a>
+                </div>
+            `;
+
+            // ≈÷«›… «·œ—” ≈·Ï √⁄·Ï «·ﬁ«∆„…
+            lessonContainer.insertBefore(card, lessonContainer.firstChild);
+
+            //  ›—Ì€ «·ÕﬁÊ· »⁄œ «·≈÷«›… »‰Ã«Õ
+            document.getElementById('lessonTitle').value = "";
+            document.getElementById('lessonUrl').value = "";
+            
+            alert(" „ ≈÷«›… «·œ—” »‰Ã«Õ ≈·Ï «·„‰ÂÃ!");
+        }
+    </script>
+</body>
+</html>
