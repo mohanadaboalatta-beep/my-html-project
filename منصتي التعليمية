@@ -543,263 +543,235 @@
     }
 
     @media (max-width:640px){
-      .nav{
-        justify-content:center;
-        text-align:center;
-      }
-      .brand{
-        width:100%;
-        justify-content:center;
-      }
+      .nav{justify-content:center;text-align:center}
+      .brand{width:100%;justify-content:center}
       .nav-menu{justify-content:center}
-      .hero-actions{
-        flex-direction:column;
-        align-items:stretch;
-      }
-      .btn{
-        width:100%;
-      }
-      .stats-grid{
-        grid-template-columns:repeat(2,minmax(0,1fr));
-      }
-      .cta{
-        justify-content:center;
-        text-align:center;
-      }
+      .hero-actions{flex-direction:column;align-items:stretch}
+      .btn{width:100%}
+      .stats-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .cta{justify-content:center;text-align:center}
     }
   </style>
 </head>
 <body>
-  <div class="topbar"><span>منصة مهند للتكنولوجيا</span> | تواصل: 01098990142</div>
+  <div class=\"topbar\"><span>منصة مهند للتكنولوجيا</span> | تواصل: 01098990142</div>
 
   <header>
-    <div class="container nav">
-      <div class="brand">
-        <div class="brand-mark">💻</div>
+    <div class=\"container nav\">
+      <div class=\"brand\">
+        <div class=\"brand-mark\">💻</div>
         <div>
           <h1>منصة مهند للتكنولوجيا</h1>
           <small>الصف الثاني الثانوي – تكنولوجيا المعلومات</small>
         </div>
       </div>
 
-      <nav class="nav-menu">
-        <a href="#home">الرئيسية</a>
-        <a href="#lessons">الدروس</a>
-        <a href="#features">المزايا</a>
-        <a href="#quiz">الاختبارات</a>
+      <nav class=\"nav-menu\">
+        <a href=\"#home\">الرئيسية</a>
+        <a href=\"#lessons\">الدروس</a>
+        <a href=\"#features\">المزايا</a>
+        <a href=\"#quiz\">الاختبارات</a>
       </nav>
 
-      <a class="phone-btn" href="tel:01098990142">📞 01098990142</a>
+      <a class=\"phone-btn\" href=\"tel:01098990142\">📞 01098990142</a>
     </div>
   </header>
 
-  <section class="hero" id="home">
-    <div class="container hero-inner">
-      <div class="hero-panel">
-        <div class="pill">🚀 منصة تعليمية حديثة</div>
+  <section class=\"hero\" id=\"home\">
+    <div class=\"container hero-inner\">
+      <div class=\"hero-panel\">
+        <div class=\"pill\">🚀 منصة تعليمية حديثة</div>
         <h2>تعلم تكنولوجيا المعلومات بطريقة احترافية وتفاعلية</h2>
         <p>
           منصة متكاملة للطلاب في الصف الثاني الثانوي تحتوي على 8 دروس في مادة
           تكنولوجيا المعلومات، مع شرح مبسط، مراجعات سريعة، وأسئلة تفاعلية في نهاية كل درس.
         </p>
 
-        <div class="hero-actions">
-          <a href="#lessons" class="btn primary">ابدأ التعلم الآن</a>
-          <a href="#quiz" class="btn secondary">اختبر معلوماتك</a>
+        <div class=\"hero-actions\">
+          <a href=\"#lessons\" class=\"btn primary\">ابدأ التعلم الآن</a>
+          <a href=\"#quiz\" class=\"btn secondary\">اختبر معلوماتك</a>
         </div>
 
-        <div class="stats-grid">
-          <div class="stat-box">
-            <strong>8</strong>
-            <span>دروس</span>
-          </div>
-          <div class="stat-box">
-            <strong>100%</strong>
-            <span>تفاعلية</span>
-          </div>
-          <div class="stat-box">
-            <strong>24/7</strong>
-            <span>دراسة مرنة</span>
-          </div>
-          <div class="stat-box">
-            <strong>4.9</strong>
-            <span>تقييم</span>
-          </div>
+        <div class=\"stats-grid\">
+          <div class=\"stat-box\"><strong>8</strong><span>دروس</span></div>
+          <div class=\"stat-box\"><strong>100%</strong><span>تفاعلية</span></div>
+          <div class=\"stat-box\"><strong>24/7</strong><span>دراسة مرنة</span></div>
+          <div class=\"stat-box\"><strong>4.9</strong><span>تقييم</span></div>
         </div>
       </div>
 
-      <div class="hero-card">
-        <div class="hero-card-content">
+      <div class=\"hero-card\">
+        <div class=\"hero-card-content\">
           <h3>ماذا ستتعلم؟</h3>
-          <ul class="mini-list">
+          <ul class=\"mini-list\">
             <li>أساسيات الحاسب</li>
             <li>البرامج ونظم التشغيل</li>
             <li>الإنترنت والشبكات</li>
             <li>الأمان الرقمي</li>
             <li>أساسيات البرمجة</li>
           </ul>
-          <div class="tag">✅ محتوى منظم ومناسب للطلاب</div>
+          <div class=\"tag\">✅ محتوى منظم ومناسب للطلاب</div>
         </div>
       </div>
     </div>
   </section>
 
   <main>
-    <div class="container">
-      <div class="section-head" id="lessons">
+    <div class=\"container">
+      <div class=\"section-head\" id=\"lessons\">
         <h3>الدروس الرئيسية</h3>
         <span>8 دروس • شرح + مراجعة + اختبار</span>
       </div>
 
-      <div class="lessons-grid">
-        <article class="lesson-card">
-          <div class="lesson-top">الدرس 1</div>
-          <div class="lesson-body">
-            <div class="lesson-icon">🖥️</div>
+      <div class=\"lessons-grid\">
+        <article class=\"lesson-card\">
+          <div class=\"lesson-top\">الدرس 1</div>
+          <div class=\"lesson-body\">
+            <div class=\"lesson-icon\">🖥️</div>
             <h4>مقدمة في الحاسب الآلي</h4>
             <p>تعريف الحاسب ومكوناته وأهميته في الحياة اليومية.</p>
-            <a href="#lesson-1">ابدأ الدرس</a>
+            <a href=\"#lesson-1\">ابدأ الدرس</a>
           </div>
         </article>
 
-        <article class="lesson-card">
-          <div class="lesson-top">الدرس 2</div>
-          <div class="lesson-body">
-            <div class="lesson-icon">⚙️</div>
+        <article class=\"lesson-card\">
+          <div class=\"lesson-top\">الدرس 2</div>
+          <div class=\"lesson-body\">
+            <div class=\"lesson-icon\">⚙️</div>
             <h4>نظم التشغيل والبرامج</h4>
             <p>كيف يدير الحاسب الموارد ويشغل التطبيقات.</p>
-            <a href="#lesson-2">ابدأ الدرس</a>
+            <a href=\"#lesson-2\">ابدأ الدرس</a>
           </div>
         </article>
 
-        <article class="lesson-card">
-          <div class="lesson-top">الدرس 3</div>
-          <div class="lesson-body">
-            <div class="lesson-icon">🌐</div>
+        <article class=\"lesson-card\">
+          <div class=\"lesson-top\">الدرس 3</div>
+          <div class=\"lesson-body\">
+            <div class=\"lesson-icon\">🌐</div>
             <h4>الشبكات والإنترنت</h4>
             <p>مفهوم الاتصال بين الأجهزة والإنترنت.</p>
-            <a href="#lesson-3">ابدأ الدرس</a>
+            <a href=\"#lesson-3\">ابدأ الدرس</a>
           </div>
         </article>
 
-        <article class="lesson-card">
-          <div class="lesson-top">الدرس 4</div>
-          <div class="lesson-body">
-            <div class="lesson-icon">🔒</div>
+        <article class=\"lesson-card\">
+          <div class=\"lesson-top\">الدرس 4</div>
+          <div class=\"lesson-body\">
+            <div class=\"lesson-icon\">🔒</div>
             <h4>الأمان الرقمي</h4>
             <p>الحماية من الفيروسات والاختراق وكلمات المرور.</p>
-            <a href="#lesson-4">ابدأ الدرس</a>
+            <a href=\"#lesson-4\">ابدأ الدرس</a>
           </div>
         </article>
 
-        <article class="lesson-card">
-          <div class="lesson-top">الدرس 5</div>
-          <div class="lesson-body">
-            <div class="lesson-icon">📄</div>
+        <article class=\"lesson-card\">
+          <div class=\"lesson-top\">الدرس 5</div>
+          <div class=\"lesson-body\">
+            <div class=\"lesson-icon\">📄</div>
             <h4>المستندات والملفات</h4>
             <p>إنشاء الملفات وتنظيمها واستخدام البرامج المكتبية.</p>
-            <a href="#lesson-5">ابدأ الدرس</a>
+            <a href=\"#lesson-5\">ابدأ الدرس</a>
           </div>
         </article>
 
-        <article class="lesson-card">
-          <div class="lesson-top">الدرس 6</div>
-          <div class="lesson-body">
-            <div class="lesson-icon">🧠</div>
+        <article class=\"lesson-card\">
+          <div class=\"lesson-top\">الدرس 6</div>
+          <div class=\"lesson-body\">
+            <div class=\"lesson-icon\">🧠</div>
             <h4>أساسيات البرمجة</h4>
             <p>خوارزميات، شروط، تكرار، ومتغيرات.</p>
-            <a href="#lesson-6">ابدأ الدرس</a>
+            <a href=\"#lesson-6\">ابدأ الدرس</a>
           </div>
         </article>
 
-        <article class="lesson-card">
-          <div class="lesson-top">الدرس 7</div>
-          <div class="lesson-body">
-            <div class="lesson-icon">🗂️</div>
+        <article class=\"lesson-card\">
+          <div class=\"lesson-top\">الدرس 7</div>
+          <div class=\"lesson-body\">
+            <div class=\"lesson-icon\">🗂️</div>
             <h4>قواعد البيانات</h4>
             <p>كيف تحفظ البيانات وتسترجعها بشكل منظم.</p>
-            <a href="#lesson-7">ابدأ الدرس</a>
+            <a href=\"#lesson-7\">ابدأ الدرس</a>
           </div>
         </article>
 
-        <article class="lesson-card">
-          <div class="lesson-top">الدرس 8</div>
-          <div class="lesson-body">
-            <div class="lesson-icon">✅</div>
+        <article class=\"lesson-card\">
+          <div class=\"lesson-top\">الدرس 8</div>
+          <div class=\"lesson-body\">
+            <div class=\"lesson-icon\">✅</div>
             <h4>مراجعة نهائية</h4>
             <p>مراجعة شاملة وتنظيم المعلومات المقررة.</p>
-            <a href="#lesson-8">ابدأ الدرس</a>
+            <a href=\"#lesson-8\">ابدأ الدرس</a>
           </div>
         </article>
       </div>
 
-      <div class="section-head" id="features">
+      <div class=\"section-head\" id=\"features\">
         <h3>لماذا هذه المنصة؟</h3>
         <span>تجربة تعليمية حديثة وممتعة</span>
       </div>
 
-      <div class="feature-grid">
-        <div class="feature-box">
-          <div class="icon">🎯</div>
+      <div class=\"feature-grid\">
+        <div class=\"feature-box\">
+          <div class=\"icon\">🎯</div>
           <h4>محتوى منظم</h4>
           <p>كل درس تم تنظيمه بطريقة واضحة وسلسة لتسهيل المتابعة.</p>
         </div>
 
-        <div class="feature-box">
-          <div class="icon">📘</div>
+        <div class=\"feature-box\">
+          <div class=\"icon\">📘</div>
           <h4>شرح مبسط</h4>
           <p>مناسب للطلاب في المرحلة الثانوية مع شرح عملي وواضح.</p>
         </div>
 
-        <div class="feature-box">
-          <div class="icon">🔁</div>
+        <div class=\"feature-box\">
+          <div class=\"icon\">🔁</div>
           <h4>انتقال سهل</h4>
           <p>زر مباشر للانتقال إلى الدرس التالي بعد المراجعة.</p>
         </div>
 
-        <div class="feature-box">
-          <div class="icon">📱</div>
+        <div class=\"feature-box\">
+          <div class=\"icon\">📱</div>
           <h4>تصميم متجاوب</h4>
           <p>يعمل على الهاتف واللوحي وسطح المكتب بدون مشاكل.</p>
         </div>
       </div>
 
-      <div class="quiz-wrap" id="quiz">
-        <div class="section-head" style="margin-top:0">
+      <div class=\"quiz-wrap\" id=\"quiz\">
+        <div class=\"section-head\" style=\"margin-top:0\">
           <h3>اختبارات قصيرة</h3>
           <span>تدريب سريع للاستيعاب</span>
         </div>
 
-        <div class="quiz-board">
-          <div class="quiz-card">
+        <div class=\"quiz-board\">
+          <div class=\"quiz-card\">
             <h5>السؤال 1</h5>
             <p>ما الوظيفة الأساسية لوحدة المعالجة المركزية؟</p>
-            <button class="quiz-btn" onclick="showAnswer(this, 'تقوم بمعالجة البيانات وتنفيذ أوامر البرامج بسرعة كبيرة.')">إظهار الإجابة</button>
-            <div class="answer-box">تقوم بمعالجة البيانات وتنفيذ أوامر البرامج بسرعة كبيرة.</div>
+            <button class=\"quiz-btn\" onclick=\"showAnswer(this, 'تقوم بمعالجة البيانات وتنفيذ أوامر البرامج بسرعة كبيرة.')\">إظهار الإجابة</button>
+            <div class=\"answer-box\">تقوم بمعالجة البيانات وتنفيذ أوامر البرامج بسرعة كبيرة.</div>
           </div>
 
-          <div class="quiz-card">
+          <div class=\"quiz-card\">
             <h5>السؤال 2</h5>
             <p>ما هي الخوارزمية؟</p>
-            <button class="quiz-btn" onclick="showAnswer(this, 'هي مجموعة من الخطوات المنطقية لحل مشكلة أو تنفيذ مهمة.')">إظهار الإجابة</button>
-            <div class="answer-box">هي مجموعة من الخطوات المنطقية لحل مشكلة أو تنفيذ مهمة.</div>
+            <button class=\"quiz-btn\" onclick=\"showAnswer(this, 'هي مجموعة من الخطوات المنطقية لحل مشكلة أو تنفيذ مهمة.')\">إظهار الإجابة</button>
+            <div class=\"answer-box\">هي مجموعة من الخطوات المنطقية لحل مشكلة أو تنفيذ مهمة.</div>
           </div>
 
-          <div class="quiz-card">
+          <div class=\"quiz-card\">
             <h5>السؤال 3</h5>
             <p>لماذا نستخدم كلمات مرور قوية؟</p>
-            <button class="quiz-btn" onclick="showAnswer(this, 'لمنع اختراق الحسابات وحماية البيانات الشخصية.')">إظهار الإجابة</button>
-            <div class="answer-box">لمنع اختراق الحسابات وحماية البيانات الشخصية.</div>
+            <button class=\"quiz-btn\" onclick=\"showAnswer(this, 'لمنع اختراق الحسابات وحماية البيانات الشخصية.')\">إظهار الإجابة</button>
+            <div class=\"answer-box\">لمنع اختراق الحسابات وحماية البيانات الشخصية.</div>
           </div>
         </div>
       </div>
 
-      <div class="cta">
+      <div class=\"cta\">
         <div>
           <h3>جاهز تبدأ رحلتك التعليمية؟</h3>
           <p>تعلم بشكل منظم، راجع بسرعة، وطبق ما تعلمته في كل درس.</p>
         </div>
-        <a href="#lessons" class="btn primary">ابدأ الآن</a>
+        <a href=\"#lessons\" class=\"btn primary\">ابدأ الآن</a>
       </div>
     </div>
   </main>
